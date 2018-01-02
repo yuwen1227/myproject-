@@ -2,13 +2,14 @@ package com.wen.oo;
 
 public class Student {
 	//Ctrl+s 儲存
-	int english;
-	int math;
+	int english;//private 最窄 有限定範圍使用
+	protected int math;
 	int chinese;
 	String name;
-	static int pass = 60;
+	static int pass = 60;//類別成員
+
 	
-	//instance variable 屬性  -> 
+	//instance variable (屬性) 
 	public Student(String name,int english,int math, int chinese){
 	this.name = name;
 	this.english= english;
