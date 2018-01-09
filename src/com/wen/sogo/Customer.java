@@ -3,7 +3,7 @@ package com.wen.sogo;
 public class Customer {
 	int amount;
 	float discount = 0.05f;
-
+	
 	public Customer(int amount) {
 		this.amount = amount;
 	}
