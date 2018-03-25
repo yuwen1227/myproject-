@@ -6,13 +6,13 @@ public class DataOfYear {
 
 	public static void main(String[] args) {
 		/*
-		 * n¬O¤µ¦~ªº100¤Ñ¬° ´X¤ë´X¸¹
+		 * næ˜¯ä»Šå¹´çš„100å¤©ç‚º å¹¾æœˆå¹¾è™Ÿ
 		 */
 			int n = 300 ;
 			int months[]={31,28,31,30,31,30,31,31,30,31,30,31}; 
 			for(int i=0; i<months.length;i++){
 			if(n<=months[i]){
-				System.out.println( (i+1) +" ¤ë "+ n +" ¤é ");
+				System.out.println( (i+1) +" æœˆ "+ n +" æ—¥ ");
 				break;
 			}else{
 				n = n-months[i];

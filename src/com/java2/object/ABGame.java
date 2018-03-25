@@ -18,7 +18,7 @@ public class ABGame {
 		while(a!=4){
 			a=0;
 			b=0;
-		System.out.println("½Ð¿é¤J±z·Q²qªº¼Æ¦r:");
+		System.out.println("è«‹è¼¸å…¥æ‚¨æƒ³çŒœçš„æ•¸å­—:");
 		String nums = scanner.nextLine();
 		int length = secret.length();
 		for (int i=0; i<length; i++){

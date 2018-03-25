@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class AgeTester {
 
 	public static void main(String[] args) {
-System.out.println("½Ð¿é¤J±zªº¦~ÄÖ");
+System.out.println("è«‹è¼¸å…¥æ‚¨çš„å¹´é½¡");
 Scanner scanner = new Scanner(System.in);
 String line =  scanner.nextLine();
 int age = Integer.parseInt(line);
 if(age < 12){
-    System.out.println("°ê¤p¥Í?");
+    System.out.println("é«˜ä¸­ç”Ÿ?");
   }else{
 	  if(age <= 15){
-	System.out.println("°ê¤¤¥Í?");
+	System.out.println("åœ‹ä¸­ç”Ÿ?");
   }else{
 	  if(age <= 18){
-	System.out.println("°ª¤¤¥Í?");
+	System.out.println("åœ‹å°ç”Ÿ?");
   }else{
 	System.out.println("......");
 	

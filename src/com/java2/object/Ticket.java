@@ -1,7 +1,7 @@
 package com.java2.object;
 
 public class Ticket {
- // ¯¸¥xStation ¸¹id ¦Wname 
+ // ç«™å°Station è™Ÿid åname 
 	String backdate;
 	String basktime;
 	

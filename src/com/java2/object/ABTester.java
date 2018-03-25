@@ -9,7 +9,7 @@ public class ABTester {
 		Scanner scanner = new Scanner(System.in);
 		int result = 0 ;
 		while(result!=40){
-			System.out.println("½Ð¿é¤J±z·Q²qªº¼Æ¦r:");
+			System.out.println("è«‹è¼¸å…¥æ‚¨æƒ³è¼¸å…¥çš„æ•¸å­—:");
 			ABNumbers n = new ABNumbers(scanner.nextLine());
 			result = n.validate(secret);
 			System.out.println(result/10+"A"+result%10+"B");
