@@ -9,12 +9,12 @@ System.out.println("Hello  World");
 Person p = new Person ();
 p.sayHello();
 
-System.out.println("½Ğ¿é¤J±zªº¦W¦r:");
+System.out.println("è«‹è¼¸å…¥æ‚¨çš„åå­—:");
 Scanner scanner = new Scanner(System.in);
 String line = scanner.nextLine();
 System.out.println("Hello,"+line);
 
-System.out.println("½Ğ°İ±zªº¦~ÄÖ?");
+System.out.println("è«‹å•æ‚¨çš„å¹´é½¡?");
 line = scanner.nextLine();
 int age = Integer.parseInt(line);
 System.out.println(age);

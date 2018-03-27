@@ -12,19 +12,19 @@ public class GameTester {
 		int row = 3;
 		int col = 5;
 
-		// §U
+		// ‰∏ã
 		if (pos / col < row - 1) {
 			pos = pos + col;
 
-		// §W
+		// ‰∏ä
 		if (pos / col >= row - 2) {
 			pos = pos - col;
 
-		// •™
+		// Â∑¶
 		if (pos % col != 0) {
 			pos = pos - 1;
 
-		// •k
+		// Âè≥
 		if (pos % col != col - 1) {
 			pos = pos + 1;
 					}
@@ -32,14 +32,14 @@ public class GameTester {
 			}
 
 			while (d != 0) {
-				System.out.print("Ω–øÈ§J§Ë¶V:");
+				System.out.print("Ë´ãËº∏ÂÖ•ÊñπÂêë:");
 				String direction = scanner.nextLine();
 				d = Integer.parseInt(direction);
 				switch (d) {
 				case 8:
 					if (pos / col >= row - 2) {
 						pos = pos - col;
-						System.out.println("¶V§W");
+						System.out.println("‰∏ä");
 						System.out.println(hp = hp - 5);
 					} else {
 						System.out.println(hp = hp - 30);
@@ -49,7 +49,7 @@ public class GameTester {
 				case 4:
 					if (pos % col != 0) {
 						pos = pos - 1;
-						System.out.println("¶V•™");
+						System.out.println("Â∑¶");
 						System.out.println(hp = hp - 5);
 					} else {
 						System.out.println(hp = hp - 30);
@@ -59,7 +59,7 @@ public class GameTester {
 				case 6:
 					if (pos % col != col - 1) {
 						pos = pos + 1;
-						System.out.println("¶V•k");
+						System.out.println("Âè≥");
 						System.out.println(hp = hp - 5);
 					} else {
 						System.out.println(hp = hp - 30);
@@ -69,7 +69,7 @@ public class GameTester {
 				case 2:
 					if (pos / col < row - 1) {
 						pos = pos + col;
-						System.out.println("¶V§U");
+						System.out.println("‰∏ã");
 						System.out.println(hp = hp - 5);
 					} else {
 						System.out.println(hp = hp - 30);

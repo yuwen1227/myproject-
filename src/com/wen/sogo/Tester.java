@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Tester {
 	public static void main(String[] args) {
-		//°}¦C©ñ¦P½è¸ê®Æ   ¶°¦X©ñ²§½è¸ê®Æ
+		//é™£åˆ—æ”¾åŒè³ªè³‡æ–™   é›†åˆæ”¾ç•°è³ªè³‡æ–™
 		
-		//ArrayList¥i©ñ²§½è¸ê®Æ   <Integer>¥i¥ş³¡Âà«¬¬°¦PÃş«¬ªº¾ã¼Æ
+		//ArrayListå¯æ”¾ç•°è³ªè³‡æ–™   <Integer>å¯å…¨éƒ¨è½‰å‹ç‚ºåŒé¡å‹çš„æ•´æ•¸
 			ArrayList<Customer>customers = new ArrayList<>();
 	    
 			customers.add(new Customer(10000));
@@ -33,7 +33,7 @@ public class Tester {
 		int n1= list.get(1);
 		int n2= list.get(2);
 		System.out.println(list.get(1));
-		System.out.println(list.size()); //size:¶°¦X¤¤¦³n­Ó¸ê®Æ
+		System.out.println(list.size()); //size:é›†åˆä¸­æœ‰nå€‹è³‡æ–™
 			for(int i=0 ; i<list.size();i++){
 				System.out.println(list.get(i));
 			}

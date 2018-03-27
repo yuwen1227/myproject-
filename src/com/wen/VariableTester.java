@@ -27,14 +27,14 @@ int len = s.length();
 System.out.println("len:"+ len);
 System.out.println(s.charAt(0));
 
-//+-*/ %¾l¼Æ    &&¥B    ||©Î
+//  +-*/   %é¤˜æ•¸      &&ä¸”      ||æˆ–
 float f =10.0f;
 int x =10;
 int y =3;
 float z =f/y;
 System.out.println(z);
 
-//2¶i¦ì¹Bºâ 10=01010
+//2é€²ä½é‹ç®— 10=01010
 System.out.println(x>>1);
 
 //x++; => x=x+1;
@@ -47,11 +47,11 @@ x = x+2;
 x += 2;
 System.out.println(x);
 
-// ¦r¦êÂà¾ã¼Æ
+// å­—ä¸²è½‰æ•´æ•¸
 String data ="123";
 int n = Integer.parseInt(data);
 
-//¾ã¼ÆÂà¦r¦ê
+//æ•´æ•¸è½‰å­—ä¸²
 String mydata = String.valueOf(n);
 
 

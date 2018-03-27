@@ -11,29 +11,29 @@ public class WeekTester {
 		int n = Integer.parseInt(line);
 		switch(n){
 		case 1 :
-			System.out.print("¬P´Á¤@");
+			System.out.print("æ˜ŸæœŸä¸€");
 			break;
 		case 2 :
-			System.out.print("¬P´Á¤G");
+			System.out.print("æ˜ŸæœŸäºŒ");
 			break;
 		case 3 :
-			System.out.print("¬P´Á¤T");
+			System.out.print("æ˜ŸæœŸä¸‰");
 			break;
 		case 4:
-			System.out.print("¬P´Á¥|");
+			System.out.print("æ˜ŸæœŸå››");
 			break;
 		case 5:
-			System.out.print("¬P´Á¤­");
+			System.out.print("æ˜ŸæœŸäº”");
 			break;
 		case 6 :
-			System.out.print("¬P´Á¤»");
+			System.out.print("æ˜ŸæœŸå…­");
 			break;
 		case 7:
-			System.out.print("¬P´Á¤Ñ");
+			System.out.print("æ˜ŸæœŸæ—¥");
 			break;
-			/* ¨S¦b¥H¤W±Ô­zªº  Âk¯Ç¬°¦P¤@Ãş  ¨Ï¥Î"default:" */
+			/* æ²’æœ‰ä»¥ä¸Šæ•˜è¿°çš„ï¼Œæ­¸ç´ç‚ºåŒä¸€é¡ï¼Œä½¿ç”¨"default:" */
 		default:
-			System.out.print("¤l·ì¤p¥_¤C");
+			System.out.print("éŒ¯èª¤");
 			
 		}
 	}

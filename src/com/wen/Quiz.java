@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Quiz {
 
 	public static void main(String[] args) {
-/*½Ğ°İ¥H¤U½Ö¦~¬ö³Ì¤j?
-		 1)©PªN­Û
-		 2)µØ±á¦t
-		 3)±ç´Â°¶
- * µª®×¬°3
- * ¨Ì¨Ï¥ÎªÌ¿é¤J¸ê®Æ§PÂ_µª¹ï©Îµª¿ù
- */
-System.out.println("½Ğ°İ¥H¤U½Ö¦~¬ö³Ì¤j?");
-System.out.println("1)©PªN­Û");
-System.out.println("2)µØ®f¦t");
-System.out.println("3)±ç´Â°¶");
+/*è«‹å•ä»¥ä¸‹èª°å¹´ç´€æœ€å¤§?
+		 1)å‘¨æ°å€«
+		 2)è¯æ™¨å®‡
+		 3)æ¢æœå‰
+* ç­”æ¡ˆç‚º3
+* ä¾ä½¿ç”¨è€…è¼¸å…¥è³‡æ–™åˆ¤æ–·ç­”å°æˆ–ç­”éŒ¯
+*/
+System.out.println("è«‹å•ä»¥ä¸‹èª°å¹´ç´€æœ€å¤§?");
+System.out.println("1)å‘¨æ°å€«");
+System.out.println("2)è¯å®¸å®‡");
+System.out.println("3)æ¢æœå‰");
 Scanner scanner = new Scanner(System.in);
 String line = scanner. nextLine();
 int n = Integer.parseInt(line);
