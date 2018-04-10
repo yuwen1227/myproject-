@@ -6,7 +6,7 @@ public class Poker2Tester {
 		String flowers = "SHDC";
 		Poker2 poker2 = new Poker2();
 		poker2.shuffle();
-	
+	    poker2.show();
 	}
 
 }

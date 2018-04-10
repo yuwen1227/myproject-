@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Odd {
 
 	public static void main(String[] args) {
-	System.out.println("½Ğ¿é¤J¤@­Ó¼Æ­È:");
+	System.out.println("è«‹è¼¸å…¥ä¸€å€‹æ•¸å€¼:");
 	Scanner scanner = new Scanner(System.in);
 	String line = scanner.nextLine();
 int n = Integer.parseInt(line);	
 if(n % 2 == 1){
-System.out.println("¬O©_¼Æ");
-}else{System.out.println("¬O°¸¼Æ");
+System.out.println("æ˜¯å¥‡æ•¸");
+}else{System.out.println("æ˜¯å¶æ•¸");
 }
 	}
 }
