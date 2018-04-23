@@ -1,6 +1,16 @@
 package com.java2.io;
 
-import java.awt.List;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.nio.channels.ShutdownChannelGroupException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -11,22 +21,20 @@ import java.util.Scanner;
 //inputSales方法:開始接收使用者輸入功能
 
 public class Sogo {
-	 Scanner scanner = new Scanner(System.in);
-	 
+	Scanner scanner = new Scanner(System.in);
+
 	public void start(){
-		int function = 0;
+		switch (function) {
 		while(function != 3){
-			showFunctions();
-			function = scanner.nextInt();
-			switch(function){
-			case 1 :
-				inputSales();
-				break;
-			case 2 :
+		case 1 :
+			inputSales();
+			break;
+		case 2 :
+			List<Sales> list = new ArrayList<>();
 				try{
-				List<Sales> list = new ArrayList()<>();
 				FileIntputStream fis = new FileInputStream("sales.txt");
 				InputStreamReader isr = new BufferedReader(isr);
+				BufferedReader in = new BufferedReader(isr);
 				String line = in.readLine();
 				while(line != null){
 					String[] token = line.split("\t");
@@ -41,15 +49,37 @@ public class Sogo {
 					}
 					line = in.readLine();
 				}
-				}catch(FileNotFoundException e )
-			case 3 :
+				}catch(FileNotFoundException e ) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				//report
+				for (Sales sales: list){
+				Customer customer = null;
+		switch(sales.type){
+				case 1: 
+				customer = new Customer(sales.getAmount());
+				break;
+				case 2:
+				customer = new SilverCustomer(sales.getAmount());
+				break;
+				case 3:
+				customer = new GoldenCustomer(sales.getAmount());
+				break;
+									}
+				customer.print();
+			} 
+				break;
+				case 3 ;
 				return;
-			}
 		}
 		}
-	public Sogo(){
-		
+
+	public Sogo() {
+
 	}
+
 	public void inputSales(){
 		try{
 		FileOutputStream fos = new FileOutputStream("sales.txt",true);
@@ -64,12 +94,14 @@ public class Sogo {
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
 		}
-	public void showFunctions(){
+
+	public void showFunctions() {
 		System.out.println("請輸入功能(1~3):");
 		System.out.println("1) 輸入銷售紀錄");
 		System.out.println("2) 印出銷售報表");
 		System.out.println("3) 結束程式");
 	}
+
 	public static void main(String[] args) {
 		Sogo sogo = new Sogo();
 	}
