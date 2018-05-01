@@ -1,6 +1,6 @@
 package com.wen.sogo;
 
-public class Customer {
+public class Customer implements Destroyable {
 	int amount;
 	float discount = 0.05f;
 	
@@ -14,5 +14,10 @@ public class Customer {
 	}
 
 	public Customer() {
+	}
+	
+	@Override
+	public void destroy(){
+		
 	}
 }
