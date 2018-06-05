@@ -15,6 +15,7 @@ public class Tester extends JFrame {
 	}
 
 	public static void main(String[] args) {
+		Tester tester = new Tester();
 		System.out.println("Hello");
 		//new Tester();
 		try {
