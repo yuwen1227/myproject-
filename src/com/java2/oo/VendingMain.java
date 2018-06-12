@@ -18,7 +18,7 @@ public class VendingMain {
 				
 /*讀取"vending.txt"*/BufferedReader in = new BufferedReader(fr);
 					String line = in.readLine();
-/*代號以,做分割*/		String[] tokens = line.split(",");
+/*資料以,做分割*/		String[] tokens = line.split(",");
 /*3項飲料*/			int count = Integer.parseInt(tokens[0]);
 					for(int i = 0;i<count;i++){
 /*奇數項為名稱*/		String name = tokens[i*2+1];

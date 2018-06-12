@@ -22,6 +22,8 @@ import com.wen.sogo.SilverCustomer;
 	 
 	 	}
 	public void start() {
+		int function = 0;
+		
 				switch (function) {
 	 			case 1:
 	 				inputSales();
