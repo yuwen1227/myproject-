@@ -19,7 +19,7 @@ public class MazeMain {
 			String line = in.readLine();
 			String[] tokens = line.split(",");
 			int col = Integer.parseInt(tokens[0]);
-			int col = Integer.parseInt(tokens[1]);
+			int row = Integer.parseInt(tokens[1]);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 
