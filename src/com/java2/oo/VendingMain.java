@@ -15,7 +15,7 @@ public class VendingMain {
 			BufferedReader in = new BufferedReader(fr);
 			String line = in.readLine();
 			String[] token = line.split(",");
-
+			vm.on();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 
