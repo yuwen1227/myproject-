@@ -9,7 +9,8 @@ public class Snow2 extends Thread {
 	int x;
 	int y = 500;
 
-	public Snow2() {
+	public Snow2(Canvas canvas) {
+		this.canvas = canvas;
 		x = random.nextInt(300);
 	}
 
@@ -28,4 +29,5 @@ public class Snow2 extends Thread {
 			}
 		}
 	}
+
 }
