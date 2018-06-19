@@ -18,8 +18,7 @@ public class Snow extends Thread{
 	}
 	
 	
-	
-	
+
 	
 	@Override
 	public void run(){

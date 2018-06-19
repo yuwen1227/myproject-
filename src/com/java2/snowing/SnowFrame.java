@@ -4,9 +4,9 @@ import java.awt.Canvas;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JFrame;
 
+//Canvas當畫布用，原點在框框內
 // JFrame 開視窗
 public class SnowFrame extends JFrame {
 	SnowCanvas canvas = new SnowCanvas();
@@ -31,9 +31,6 @@ public class SnowFrame extends JFrame {
 
 			}
 		}
-
-		
-		
 
 		@Override
 		public void paint(Graphics g) {
