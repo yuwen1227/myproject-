@@ -33,6 +33,7 @@ public class SnowFrame extends JFrame {
 		}
 
 		
+		
 
 		@Override
 		public void paint(Graphics g) {

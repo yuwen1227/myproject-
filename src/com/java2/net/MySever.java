@@ -23,8 +23,10 @@ public class MySever {
 			String command = tokens[0];
 			String option = tokens[1];
 			System.out.println(command + "/" + option);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("Error!!!");
 		}
 
 	}
