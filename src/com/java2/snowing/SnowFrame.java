@@ -7,9 +7,11 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
+// JFrame 開視窗
 public class SnowFrame extends JFrame {
 	SnowCanvas canvas = new SnowCanvas();
-
+	
+//建立物件(雪)，設定視窗大小，顯示視窗
 	public SnowFrame() {
 		setSize(850, 650);
 		setLocation(500, 200);
@@ -17,7 +19,7 @@ public class SnowFrame extends JFrame {
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setVisible(true);
 	}
-
+//Canvas 的子項目永遠不會調整大小，它們只會位於其指定的座標上。
 	public class SnowCanvas extends Canvas {
 		List<Snow> snows = new ArrayList<>();
 
