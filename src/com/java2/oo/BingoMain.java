@@ -26,7 +26,27 @@ public class BingoMain extends Bingo{
 		BufferedReader in = new BufferedReader(rd);
 		String line = in.readLine();
 		int number = Integer.parseInt(line);
-	} catch (Exception e) {
+		int table = (int)Math.sqrt(number);
+		line = in.readLine();
+		String[] tokens = line.split(",");
+		List<Integer> bingos = new ArrayList<>();
+		for (int i=0; i<=tokens.length-1; i++) {
+			int bingo= Integer.parseInt(tokens[i]);
+			bingos.add(bingo);
+			
+		}
+		Form form= new Form(table, number, bingos);
+		
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	} catch (IOException e) {
+		e.printStackTrace();
 	}
 	}
-}
+
+	public static void main(String[] args) {
+		new BingoMain();
+	}
+	}
+
+	
