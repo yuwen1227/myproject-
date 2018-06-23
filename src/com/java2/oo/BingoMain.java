@@ -17,36 +17,35 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.java2.oo.Bingo.Form;
 
 public class BingoMain extends Bingo{
 	public BingoMain() {
 	try {
 		FileReader rd	 = new FileReader("Bingo.txt");
-		BufferedReader in = new BufferedReader(rd);
-		String line = in.readLine();
-		int number = Integer.parseInt(line);
-		int table = (int)Math.sqrt(number);
-		line = in.readLine();
-		String[] tokens = line.split(",");
-		List<Integer> bingos = new ArrayList<>();
-		for (int i=0; i<=tokens.length-1; i++) {
-			int bingo= Integer.parseInt(tokens[i]);
-			bingos.add(bingo);
-			
-		}
-		Form form= new Form(table, number, bingos);
+	BufferedReader in = new BufferedReader(rd);
+	String line = in.readLine();
+	int number = Integer.parseInt(line);
+	int table = (int)Math.sqrt(number);
+	line = in.readLine();
+	String[] tokens = line.split(",");
+	List<Integer> bingos = new ArrayList<>();
+	for (int i=0; i<=tokens.length-1; i++) {
+		int bingo= Integer.parseInt(tokens[i]);
+		bingos.add(bingo);
 		
-	} catch (FileNotFoundException e) {
-		e.printStackTrace();
-	} catch (IOException e) {
-		e.printStackTrace();
 	}
-	}
-
-	public static void main(String[] args) {
-		new BingoMain();
-	}
-	}
-
+	Form form = new Form(table, number, bingos);
+	form.print();
+	form.Bingo();
 	
+} catch (FileNotFoundException e) {
+	e.printStackTrace();
+} catch (IOException e) {
+	e.printStackTrace();
+}
+}
+
+public static void main(String[] args) {
+	new BingoMain();
+}
+}
