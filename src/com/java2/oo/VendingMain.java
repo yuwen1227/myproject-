@@ -30,11 +30,9 @@ public class VendingMain {
 			vm.on();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-
+			System.out.println("NO");
 		} catch (IOException e) {
 			e.printStackTrace();
-		
 		}
-		
 	}
 }
