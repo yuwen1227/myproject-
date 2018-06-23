@@ -17,7 +17,6 @@ public class VendingMain {
 		
 		try {
 					fr = new FileReader("vending.txt");
-				
 /*讀取"vending.txt"*/BufferedReader in = new BufferedReader(fr);
 					String line = in.readLine();
 /*資料以,做分割*/		String[] tokens = line.split(",");
