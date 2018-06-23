@@ -8,11 +8,13 @@ import java.io.FileNotFoundException;
 
 public class VendingMain {
 
+
 	public static void main(String[] args) {
 		//讀取鍵盤輸入     BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		//readLine()    讀取檔案每行資料 傳回為String 自動刪除跳行符號 因此字會擠在一起
 		VendingMachine vm = new VendingMachine();
 		FileReader fr;
+		
 		try {
 					fr = new FileReader("vending.txt");
 				
@@ -32,6 +34,8 @@ public class VendingMain {
 
 		} catch (IOException e) {
 			e.printStackTrace();
+		
 		}
+		
 	}
 }

@@ -12,6 +12,11 @@ public class MazeMain {
 
 	public static void main(String[] args) {
 		new MazeMain();
+		
+		int row = 5;
+		int col = 5;
+		int hp = 100;
+		
 		FileReader fr;
 		try {
 			fr = new FileReader("maze.txt");
