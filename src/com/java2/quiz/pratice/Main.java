@@ -7,10 +7,10 @@ import java.security.GeneralSecurityException;
 public class Main {
 
 	public static void main(String[] args) {
-	FileReader fx ;
+	
 	Machine m = new Machine();
 	try {
-		fx = new FileReader("drink.txt");
+		FileReader fx = new FileReader("drink.txt");
 		BufferedReader in = new BufferedReader(fx);
 		String line = in.readLine();
 		String[] tokens = line.split(",");

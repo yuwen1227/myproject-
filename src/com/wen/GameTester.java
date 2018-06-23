@@ -9,8 +9,8 @@ public class GameTester {
 		int hp = 100;
 		int d = -1;
 		int pos = 0;
-		int row = 3;
-		int col = 5;
+		int row = 3;//列
+		int col = 5;//行
 
 		// 下
 		if (pos / col < row - 1) {
@@ -37,7 +37,7 @@ public class GameTester {
 				d = Integer.parseInt(direction);
 				switch (d) {
 				case 8:
-					if (pos / col >= row - 2) {
+					if (pos / col >=row - 2) {
 						pos = pos - col;
 						System.out.println("上");
 						System.out.println(hp = hp - 5);

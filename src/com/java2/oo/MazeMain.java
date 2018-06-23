@@ -7,46 +7,26 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class MazeMain {
 
-	public static void main(String[] args) {
-		new MazeMain();
-		
-		int row = 5;
-		int col = 5;
-		int hp = 100;
-		
-		FileReader fr;
+	public MazeMain() {
 		try {
-			fr = new FileReader("maze.txt");
-			BufferedReader in = new BufferedReader(fr);
-			String line = in.readLine();
-			String[] tokens = line.split(",");
-			int col = Integer.parseInt(tokens[0]);
-			int row = Integer.parseInt(tokens[1]);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	class Main{
-		int row,col;
-		int trapCount;
-		int[] traps;
-		int[] positions;
-		Player player;
-	public void Maze(int col, int row, int trapCount){
-		this.col = col;
-		this.row = row;
-		this.trapCount = trapCount;
-	}
-	
-}
-	class Player{
-		int hp = 100;
-		int pos = 0;
+			FileReader rd = new FileReader("maze.txt");
+			BufferedReader bfr = new BufferedReader(rd);
+			String line = bfr.readLine();
+			String[] steps = line.split(",");
+			int col = Integer.parseInt(steps[0]);
+			int row = Integer.parseInt(steps[1]);
+			line = bfr.readLine();
+		
+		} catch (Exception e) {
+		} 
 	}
 }
+			

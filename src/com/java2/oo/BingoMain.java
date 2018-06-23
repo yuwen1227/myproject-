@@ -9,11 +9,24 @@
 //8,4,7,18,21,3,5,1,9,10
 package com.java2.oo;
 
-public class BingoMain{
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-	public static void main(String[] args) {
-		Bingo b = new Bingo();
-		b.print();
+import com.java2.oo.Bingo.Form;
+
+public class BingoMain extends Bingo{
+	public BingoMain() {
+	try {
+		FileReader rd	 = new FileReader("Bingo.txt");
+		BufferedReader in = new BufferedReader(rd);
+		String line = in.readLine();
+		int number = Integer.parseInt(line);
+	} catch (Exception e) {
+	}
 	}
 }
-
