@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 public class Main3 {
 	
+	private static final int q = 0;
+
 	public static void main(String[] args) {
 		Menu m = new Menu();
 		try {
@@ -68,17 +70,40 @@ public class Main3 {
 		System.out.println(list7.get(0)+")"+list7.get(1));
 		System.out.println("0"+")"+"結算");
 		System.out.println("q"+")"+"離開(結束程式)");
-		System.out.println("請輸入餐點:");
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("請輸入餐點:");
 		int meal = scanner.nextInt();
-		if(meal!=0) {
-	
 		System.out.println("請輸入數量");
 		int number = scanner.nextInt();
-		System.out.println("目前餐點:"+meal+"號"+number+"份") ;
+		while(meal!=q) {
+			switch(meal) {
+			case 1:
+				System.out.println("目前餐點:"+"1."+" "+list1.get(1)+number+"份");
+				break;
+			case 2:
+				System.out.println("目前餐點:"+"1."+" "+list2.get(1)+number+"份");
+				break;
+			case 3:
+				System.out.println("目前餐點:"+"1."+" "+list3.get(1)+number+"份");
+				break;
+			case 4:
+				System.out.println("目前餐點:"+"1."+" "+list4.get(1)+number+"份");
+				break;
+			case 5:
+				System.out.println("目前餐點:"+"1."+" "+list5.get(1)+number+"份");
+				break;
+			case 6:
+				System.out.println("目前餐點:"+"1."+" "+list6.get(1)+number+"份");
+				break;
+			case 7:
+				System.out.println("目前餐點:"+"1."+" "+list7.get(1)+number+"份");
+				break;
+			case 0:
+				break;
+			}
+			break;
 		}
-		System.out.println("============");
-		
+		System.out.println("========================");
 		
 	}catch(FileNotFoundException e) {
 		e.getStackTrace();
