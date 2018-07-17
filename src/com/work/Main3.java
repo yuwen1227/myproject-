@@ -61,6 +61,7 @@ public class Main3 {
 		for(int i=0;i<token7.length;i++) {
 			list7.add(token7[i]);
 		}
+		for(int a=0;a<100;a++) {
 		System.out.println(list1.get(0)+")"+list1.get(1));
 		System.out.println(list2.get(0)+")"+list2.get(1));
 		System.out.println(list3.get(0)+")"+list3.get(1));
@@ -75,6 +76,7 @@ public class Main3 {
 		int meal = scanner.nextInt();
 		System.out.println("請輸入數量");
 		int number = scanner.nextInt();
+		
 		while(meal!=q) {
 			switch(meal) {
 			case 1:
@@ -104,7 +106,7 @@ public class Main3 {
 			break;
 		}
 		System.out.println("========================");
-		
+		}
 	}catch(FileNotFoundException e) {
 		e.getStackTrace();
 	}catch(IOException e) {
