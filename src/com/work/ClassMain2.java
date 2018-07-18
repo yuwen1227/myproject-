@@ -10,7 +10,6 @@ import java.util.List;
 public class ClassMain2 {
 
 	public static void main(String[] args) {
-		Class2 c2 = new Class2();
 		try {
 		FileReader fr = new FileReader("grade.txt");
 		BufferedReader bf = new BufferedReader(fr);

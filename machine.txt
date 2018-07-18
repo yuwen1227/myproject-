@@ -1,0 +1,5 @@
+1,coke,25
+2,juice,30
+3,soda,20
+4,milk,30
+5,coffee,35

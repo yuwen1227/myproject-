@@ -3,8 +3,8 @@ package com.wen.oo;
 public class Tester {
 
 	public static void main(String[] args) {
-  //  Student stu = new Student("¤p©ú",55,77,99);
-	  Student stu = new Student("¤p©ú");
+  //  Student stu = new Student("å°æ˜",55,77,99);
+	  Student stu = new Student("å°æ˜");
   	
 	  stu.english = 55;
   	  stu.math = 77;
