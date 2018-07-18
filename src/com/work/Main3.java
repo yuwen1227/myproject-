@@ -101,11 +101,12 @@ public class Main3 {
 				System.out.println("目前餐點:"+"1."+" "+list7.get(1)+number+"份");
 				break;
 			case 0:
+				System.out.println("合計:");
 				break;
 			}
 			break;
 		}
-		System.out.println("========================");
+		System.out.println("=======================");
 		}
 	}catch(FileNotFoundException e) {
 		e.getStackTrace();

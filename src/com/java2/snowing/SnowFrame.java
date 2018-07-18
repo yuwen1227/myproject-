@@ -36,7 +36,7 @@ public class SnowFrame extends JFrame {
 		public void paint(Graphics g) {
 			for (int i = 0; i < 100; i++) {
 				Snow snow = snows.get(i);
-				g.drawString("雪", snow.x, snow.y);
+				g.drawString("O", snow.x, snow.y);
 			}
 		}
 

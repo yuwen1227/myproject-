@@ -28,7 +28,7 @@ public class Snow extends Thread{
 			x = x + random.nextInt(3)-1;
 			snowCanvas.repaint();
 			try {
-				sleep(50);
+				sleep(40);
 			} catch ( InterruptedException e) {
 				e.printStackTrace();
 			}

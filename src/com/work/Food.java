@@ -5,6 +5,21 @@ public class Food {
 	String name;
 	int price;
 	int kcal;
+	int total;
+	public Food(int id, String name, int price, int kcal, int total) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.kcal = kcal;
+		this.total = total;
+	}
+	public int getTotal() {
+		return total;
+	}
+	public void setTotal(int total) {
+		this.total = total;
+	}
 	public int getId() {
 		return id;
 	}
