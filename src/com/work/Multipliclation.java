@@ -8,10 +8,11 @@ public class Multipliclation {
 				System.out.print(j + " " + "X" + " " + i + " " + "=" + " " + i * j + "\t");
 				if (j == 9) {
 					System.out.println(" ");
+					
+					}
 				}
 			}
 
 		}
 	}
 
-}

@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class VendingMain {
 
 	public static void main(String[] args) {
-		VendingMachine vm = new VendingMachine();
+	
 		try {
 			FileReader fr = new FileReader("machine.txt");
 			BufferedReader bf = new BufferedReader(fr);
@@ -53,16 +53,34 @@ public class VendingMain {
 			System.out.println("項目"+d5.get(0)+"\t"+"品項名:"+d5.get(1)+"\t"+"價錢:"+d5.get(2));
 			System.out.println("請投入硬幣(1元 5元 10元 50元) : ");
 			Scanner scanner = new Scanner(System.in);
+			int total;
 			int money = scanner.nextInt();
-			while(money<20) {
+			if(money<20) {
 				System.out.println("oops!金額不足!請再投入硬幣");
+			}
 			int money2 = scanner.nextInt();
-			while(money==20||money+money2==20)
-				System.out.println("請輸入購買項目:"+d3.get(0)+" "+d3.get(1)+"  "+d4.get(0)+" "+d4.get(1) );
-			
-			int number = scanner.nextInt();
-				System.out.println("購買完成!謝謝光臨!");
-				break;
+			if(money+money2<20) {
+				System.out.println("oops!金額不足!請再投入硬幣");
+			}
+			int money3 = scanner.nextInt();
+			if(money+money2+money3<20) {
+				System.out.println("oops!金額不足!請再投入硬幣");
+			}
+			int money4 = scanner.nextInt();
+			if(money+money2+money3+money4<20) {
+				System.out.println("oops!金額不足!請再投入硬幣");
+			}
+			int money5 = scanner.nextInt();
+			if(money+money2+money3+money4+money5<=20) {
+				System.out.println("請選擇購買項目:"+"\t"+d3.get(0)+d3.get(1) );
+			}
+			if(money+money2+money3+money4+money5<=25) {
+				System.out.println("請選擇購買項目:"+"\t"+d1.get(0)+d1.get(1)+"\t"+d3.get(0)+d3.get(1) );
+			}
+			if(money+money2+money3+money4+money5<=30) {
+				System.out.println("請選擇購買項目:"+d1.get(0)+d1.get(1)+"\t"+d2.get(0)+d2.get(1)+"\t"+d3.get(0)+d3.get(1) );
+			}else{
+				System.out.println("請選擇購買項目:"+d1.get(0)+d1.get(1)+"\t"+d2.get(0)+d2.get(1)+"\t"+d3.get(0)+d3.get(1)+"\t"+d4.get(0)+d4.get(1) );
 			}
 		}catch(FileNotFoundException e) {
 			System.out.println("oops!error!");

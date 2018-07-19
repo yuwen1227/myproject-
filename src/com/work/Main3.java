@@ -103,6 +103,7 @@ public class Main3 {
 			case 0:
 				System.out.println("合計:");
 				break;
+			
 			}
 			break;
 		}
