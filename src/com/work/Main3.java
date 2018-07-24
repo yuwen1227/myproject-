@@ -80,25 +80,25 @@ public class Main3 {
 		while(meal!=q) {
 			switch(meal) {
 			case 1:
-				System.out.println("目前餐點:"+"1."+" "+list1.get(1)+number+"份");
+				System.out.println("目前餐點:"+list1.get(1)+number+"份");
 				break;
 			case 2:
-				System.out.println("目前餐點:"+"1."+" "+list2.get(1)+number+"份");
+				System.out.println("目前餐點:"+list2.get(1)+number+"份");
 				break;
 			case 3:
-				System.out.println("目前餐點:"+"1."+" "+list3.get(1)+number+"份");
+				System.out.println("目前餐點:"+list3.get(1)+number+"份");
 				break;
 			case 4:
-				System.out.println("目前餐點:"+"1."+" "+list4.get(1)+number+"份");
+				System.out.println("目前餐點:"+list4.get(1)+number+"份");
 				break;
 			case 5:
-				System.out.println("目前餐點:"+"1."+" "+list5.get(1)+number+"份");
+				System.out.println("目前餐點:"+list5.get(1)+number+"份");
 				break;
 			case 6:
-				System.out.println("目前餐點:"+"1."+" "+list6.get(1)+number+"份");
+				System.out.println("目前餐點:"+list6.get(1)+number+"份");
 				break;
 			case 7:
-				System.out.println("目前餐點:"+"1."+" "+list7.get(1)+number+"份");
+				System.out.println("目前餐點:"+list7.get(1)+number+"份");
 				break;
 			case 0:
 				System.out.println("合計:");

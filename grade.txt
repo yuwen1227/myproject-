@@ -1,4 +1,1 @@
-18,ANN,90,75
-22,AMBER,60,95
-15,RAIN,40,65
-10,JAY,100,98
+5,Anson,98,Coco,95,Elisa,90,Ring,85,Hsin,90
